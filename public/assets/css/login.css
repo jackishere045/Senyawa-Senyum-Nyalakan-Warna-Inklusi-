@@ -1,0 +1,107 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #e0e0e0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: row;   /* PENTING: biar samping² */
+  justify-content: center; 
+  align-items: center;   /* PENTING: biar vertical center */
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+  .login-box {
+    flex-direction: column;
+  }
+  .login-left {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+}
+
+.brand-text {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.login-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* PENTING: agar ikut membesar */
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  border: none;
+  border-radius: 25px;
+  background: #e0e0e0;
+}
+
+.input-group .icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.remember-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+
+.forgot-link {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    color: red;
+    font-size: 14px;
+    text-decoration: none;
+}

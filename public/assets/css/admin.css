@@ -1,0 +1,28 @@
+/* Sidebar custom style */
+.sidebar-custom {
+    background-color: #1F1F5C;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar-custom .nav-link {
+    color: #ffffff;
+    transition: all 0.2s;
+}
+
+.sidebar-custom .nav-link:hover,
+.sidebar-custom .nav-link.active {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.sidebar-custom .logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+.sidebar-custom .logout {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
